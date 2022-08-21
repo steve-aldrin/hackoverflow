@@ -1,3 +1,4 @@
+/* Navbar Styles*/
 .navbar-custom {
     color: black;
     background-color:black;
@@ -34,4 +35,43 @@ a{
   padding-left:30px;
   padding-right:30px;
   font-family: Sansation;
+}
+
+/* Sponsors Styles */
+.card-body{
+
+	height: 0px;
+	background-color: aqua;
+    transition: 1s;
+	
+}
+.card-body:hover{
+	transition: 1s;
+	transform: translateY(-100px);
+	height: fit-content;
+	
+
+}
+
+
+.card-text{
+	opacity: 0;
+}
+.card-text:hover{
+	opacity: 1;
+	transition: 1s;
+
+}
+
+	
+@keyframes textanima {
+	from    {
+		   
+			opacity: 0;
+	}
+	to{
+		transform: translateY(-100px);
+		opacity: ;
+	}
+	
 }
