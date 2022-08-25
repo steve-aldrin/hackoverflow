@@ -1,131 +1,266 @@
 <html>
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
- 
+
 <body>
-  <!-- navbar start -->
- 
-<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black;">
-  <a href="https://cyscomvit.com">
-  <img src="https://cyscomvit.com/assets/images/logo.png" id="logo" >
-  <a class="navbar-brand" href="https://cyscomvit.com">CYSCOM</a>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
- 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link text-light" href="#">Timeline <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Sponsors</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Judges</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Contact</a>
-      </li>
-      
-      </li>
-    </ul>
-    <button type="button" class="btn btn-default btn-space navbar-btn navbar-right">Register</button>
-  
-  </div>
-</nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Stars -->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+
+    <!-- navbar start -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:linear-gradient(#132f61,black);">
+        <a href="https://cyscomvit.com">
+            <img src="https://cyscomvit.com/assets/images/logo.png" id="logo" >
+            <a class="navbar-brand" href="https://cyscomvit.com">CYSCOM</a>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">Timeline <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Judges</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <button type="button" class="btn btn-default btn-space navbar-btn navbar-right">Register</button>
+        </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+    <!-- Countdown timer starts -->
+
+    <section class="countdown-container">
+        <div class="logo">
+          <img class="main-logo" src="./Assets/Event-logo.png" alt="Logo" />
+          <h4 class="event-name">HACKOVERFLOW</h4>
+          <h5 class="chapter-name">CYSCOM VIT</h5>
+        </div>
+
+        <div class="countdown-main">
+          <h5 class = "eventStarts">Event starts in</h5>
+
+          <div class="countdown">
+            <div class="container-day">
+              <h4 class="day">00</h4>
+              <h5>Days</h5>
+            </div>
+
+            <div class="container-hour">
+              <h4 class="hour">00</h4>
+              <h5>Hours</h5>
+            </div>
+
+            <div class="container-minute">
+              <h4 class="minute">00</h4>
+              <h5>Minutes</h5>
+            </div>
+
+            <div class="container-second">
+              <h4 class="second">00</h4>
+              <h5>Seconds</h5>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Countdown timer ends -->
+
+    <!-- About content starts -->
+
+    <div class="about">
+        <h1>WHAT IS HACKOVERFLOW?</h1>
+        <div class="info">
+            <p>
+                HackoverFlow is the flagship hackathon conducted by Cyscom VIT Chennai
+                formerly OWASP VIT Chennai. HackoverFlow encourages participants to present their solutions to tackle
+                challenging real-world problems. It is a platform to compete and network
+                with like-minded and skilled students from all walks of life.
+            </p>
+            <p>
+                HackoverFlow is an 48hr hackathon event, themed on latest technological
+                requirements of NGOs, and startups, focusing on the domains of blockchain,
+                AI & ML, IOT etc. So gather your teams and get ready for the ultimate
+                technical-skills showdown from 23rd September (Friday) to 25th
+                September(Sunday).
+            </p>
+        </div>
+    </div>
+
+    <!-- About content ends -->
+
+    <!-- Timeline section starts -->
+
+    <div class="container tl-container" data-aos="fade-up">
+        <div class="timeline" data-aos="fade-up">
+            <ul>
+                <li>
+                    <!-- while using aos, date comes inside the box... need to change it -->
+                    <div class="timeline-content" data-aos="fade-bottom">
+                        <!-- trying dates, similarly for all -->
+                        <h2 class="date" data-aos="fade-up" >20th may 2022</h2>
+                        <h1>Heading 1</h1>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis voluptas commodi. Corporis, dolor doloribus..
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content" data-aos="fade-right">
+                        <h2 class="date" data-aos="fade-up">20th may 2022</h2>
+                        <h1>Heading 2</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis voluptas commodi. Corporis, dolor doloribus...
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content" data-aos="fade-left">
+                        <h2 class="date" data-aos="fade-up">20th may 2022</h2>
+                        <h1>Heading 3</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis voluptas commodi. Corporis, dolor doloribus..
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content" data-aos="fade-right">
+                        <h2 class="date" data-aos="fade-up">20th may 2022</h2>
+                        <h1>Heading 4</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis voluptas commodi. Corporis, dolor doloribus..
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Timeline section ends -->
 
     <!-- Sponsor Section start -->
-    <section class="bg-light py-4 my-5">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <h2 class="mb-3 text-primary">Sponsors</h2>
-              </div>
-  
-              <div class="col-md-6 col-lg-4">
-                  <div class="card my-3">
-  
-                      <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top" alt="thumbnail">
-  
-                      <div class="card-body">
-                          <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
-                          <p class="card-text">HTML stands for Hyper Text Markup Language, It helps to learn web development and designing. </p>
-                          
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="col-md-6 col-lg-4">
-                  <div class="card my-3">
-  
-                      <img src="https://images.pexels.com/photos/3848158/pexels-photo-3848158.jpeg" class="card-image-top" alt="thumbnail">
-  
-                      <div class="card-body">
-                          <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
-                          <p class="card-text">We use HTML to make website and that website helps to gain very much knowledge.Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida.</p>
-                          
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="col-md-6 col-lg-4">
-                  <div class="card my-3">
-  
-                      <img src="https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg" class="card-image-top" alt="thumbnail">
-                      <div class="card-body">
-                          <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
-                          <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit,</p>
-                          
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="col-md-6 col-lg-4">
-                  <div class="card my-3">
-                      <img src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg" class="card-image-top" alt="thumbnail">
-                      <div class="card-body">
-                          <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
-                          <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit.</p>
-                          
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="col-md-6 col-lg-4">
-                  <div class="card my-3">
-  
-                      <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg" class="card-image-top" alt="thumbnail">
-                      <div class="card-body">
-                          <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
-                          <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit,</p>
-                          
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="col-md-6 col-lg-4">
-                  <div class="card my-3">
-  
-                      <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" class="card-image-top" alt="thumbnail">
-  
-                      <div class="card-body">
-                          <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
-                          <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit.</p>
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+
+    <section class="py-4 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-3 ">Sponsors</h2>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+                        <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-img-top" alt="thumbnail" height="200" width="280">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
+                            <p class="card-text">HTML stands for Hyper Text Markup Language, It helps to learn web development and designing. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+                        <img src="https://images.pexels.com/photos/3848158/pexels-photo-3848158.jpeg" class="card-img-top" alt="thumbnail" height="200" width="280">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
+                            <p class="card-text">We use HTML to make website and that website helps to gain very much knowledge.Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+                        <img src="https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg" class="card-img-top" alt="thumbnail" height="200" width="280">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
+                            <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit,</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+                        <img src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg" class="card-img-top" alt="thumbnail" height="200" width="280">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
+                            <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+                        <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg" class="card-img-top" alt="thumbnail" height="200" width="280">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
+                            <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit,</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+                        <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" class="card-img-top" alt="thumbnail" height="200" width="280">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#" class="text-secondary">Sponsor</a></h3>
+                            <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsor section ends -->
+
+    <!-- Footer section starts -->
+
+    <footer>
+        <p>CYSCOM VITCC | Think before you click.</p>
+        <div class="footer-links">
+        <a href="https://facebook.com/cyscomvit/"><img src="./icons/facebook.png" alt="" height="32" width="32"></a>
+        <a href="https://instagram.com/cyscomvit/"><img src="./icons/instagram.png" alt="" height="32" width="32"></i></a>
+        <a href="https://twitter.com/CyscomVit/"><img src="./icons/twitter.png" alt="" height="32" width="32"></a>
+        <a href="https://www.linkedin.com/company/cyscomvit/"><img src="./icons/linkedin.png" alt="" height="32" width="32"></a>
+        <a href="https://github.com/cyscomvit/"><img src="./icons/github.png" alt="" height="32" width="32"></a>
+        <a href="https://discord.gg/9RyHCQgjAv"><img src="./icons/discord.png" alt="" height="32" width="32"></a>
+        <a href="https://blog.cyscomvit.com/"><img src="./icons/blogger.png" alt="" height="32" width="32"></a>
+        <a href="https://medium.cyscomvit.com/"><img src="./icons/medium.png" alt="" height="32" width="32"></a>
+        </div>
+    </footer>
+
+    <!-- Footer section ends -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:200,
+        duration: 1000,
+      });
+    </script>
+    <script src="./app.js"></script>
 
 </body>
 </html>
